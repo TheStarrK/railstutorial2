@@ -1,0 +1,12 @@
+inherit_gem:
+  relaxed-rubocop: .rubocop.yml
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'config/environments/*'
+    - 'test/**/*'
