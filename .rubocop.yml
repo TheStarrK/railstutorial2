@@ -10,3 +10,4 @@ AllCops:
     - 'db/schema.rb'
     - 'config/environments/*'
     - 'test/**/*'
+    - 'Guardfile'
