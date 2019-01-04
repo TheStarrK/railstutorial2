@@ -4,6 +4,7 @@ $light-gray: #777;
 $medium-light-gray: #EAEAEA;
 $gray: #555;
 $dark-gray: #222;
+$state-danger-text: #a94442;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -166,4 +167,19 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  // @extend .has-error; // Can not use this with bootstrap cdn
+  .form-control {
+    color: $state-danger-text;
+  }
 }
