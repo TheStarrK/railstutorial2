@@ -1,5 +1,14 @@
 {
   "name": "railstutorial2",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "rubocop && annotate",
+      "pre-push": "rails t"
+    }
+  },
+  "devDependencies": {
+    "husky": "^1.3.1"
+  }
 }
